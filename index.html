@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Санаторий в Щучинске — премиальный отдых в сердце Казахстана">
+    <title>Щучинск Санаторий | Премиальный отдых и здоровье</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader__content">
+            <div class="preloader__logo">
+                <span class="preloader__letter preloader__letter--1">Щ</span>
+                <span class="preloader__letter preloader__letter--2">У</span>
+                <span class="preloader__letter preloader__letter--3">Ч</span>
+            </div>
+            <div class="preloader__line"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="container nav__container">
+            <a href="#" class="nav__logo">
+                <span class="nav__logo-icon">◆</span>
+                <span class="nav__logo-text">Щучинск</span>
+            </a>
+            <ul class="nav__menu" id="navMenu">
+                <li class="nav__item"><a href="about.html" class="nav__link">О санатории</a></li>
+                <li class="nav__item"><a href="rooms.html" class="nav__link">Номера</a></li>
+                <li class="nav__item"><a href="services.html" class="nav__link">Услуги</a></li>
+                <li class="nav__item"><a href="gallery.html" class="nav__link">Галерея</a></li>
+                <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+                <li class="nav__item"><a href="booking.html" class="nav__link nav__link--cta">Забронировать</a></li>
+            </ul>
+            <button class="nav__toggle" id="navToggle" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero__bg">
+            <div class="hero__overlay"></div>
+        </div>
+        <div class="hero__content">
+            <div class="hero__text">
+                <h1 class="hero__title">
+                    <span class="hero__title-line">Гармония</span>
+                    <span class="hero__title-line">природы и</span>
+                    <span class="hero__title-line hero__title-line--accent">здоровья</span>
+                </h1>
+                <p class="hero__subtitle">Премиальный санаторий в сердце Щучинска</p>
+            </div>
+            <a href="#booking" class="hero__btn">
+                <span>Забронировать</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+        <div class="hero__scroll">
+            <div class="hero__scroll-text">Листайте вниз</div>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__content">
+                    <span class="section-tag">О санатории</span>
+                    <h2 class="section-title">Место, где время замедляется</h2>
+                    <p class="about__text">
+                        Расположенный среди живописных гор и кристально чистых озёр Щучинска, 
+                        наш санаторий предлагает уникальный опыт восстановления тела и духа. 
+                        Сочетание современных методик лечения и первозданной природы создаёт 
+                        идеальные условия для вашего отдыха.
+                    </p>
+                    <div class="about__stats">
+                        <div class="about__stat">
+                            <span class="about__stat-value" data-count="25">0</span>
+                            <span class="about__stat-label">лет опыта</span>
+                        </div>
+                        <div class="about__stat">
+                            <span class="about__stat-value" data-count="150">0</span>
+                            <span class="about__stat-label">номеров</span>
+                        </div>
+                        <div class="about__stat">
+                            <span class="about__stat-value" data-count="98">0</span>
+                            <span class="about__stat-label">% гостей возвращаются</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__cards">
+                    <div class="about__card">
+                        <div class="about__card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"/>
+                                <path d="M17 4a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2"/>
+                                <path d="M19 11h3m-1 -1v2"/>
+                            </svg>
+                        </div>
+                        <h3 class="about__card-title">Экология</h3>
+                        <p class="about__card-text">Чистейший горный воздух и вода из природных источников</p>
+                    </div>
+                    <div class="about__card">
+                        <div class="about__card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 21a9 9 0 0 0 9 -9a9 9 0 0 0 -9 -9a9 9 0 0 0 -9 9a9 9 0 0 0 9 9z"/>
+                                <path d="M12 3v18"/>
+                                <path d="M12 8a2.5 2.5 0 0 1 2.5 2.5"/>
+                                <path d="M12 13.5a2.5 2.5 0 0 0 2.5 2.5"/>
+                            </svg>
+                        </div>
+                        <h3 class="about__card-title">Здоровье</h3>
+                        <p class="about__card-text">Комплексные программы оздоровления и реабилитации</p>
+                    </div>
+                    <div class="about__card">
+                        <div class="about__card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M5 12.55a11 11 0 0 1 14.08 0"/>
+                                <path d="M8.5 16.5a7 7 0 0 1 7 0"/>
+                                <path d="M12 20.5l-.5 -.5"/>
+                                <path d="M12 3.5l.5 .5"/>
+                            </svg>
+                        </div>
+                        <h3 class="about__card-title">Комфорт</h3>
+                        <p class="about__card-text">Номера премиум-класса с панорамным видом</p>
+                    </div>
+                    <div class="about__card">
+                        <div class="about__card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"/>
+                                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/>
+                                <path d="M12 3v2"/>
+                                <path d="M12 19v2"/>
+                                <path d="M3 12h2"/>
+                                <path d="M19 12h2"/>
+                            </svg>
+                        </div>
+                        <h3 class="about__card-title">SPA</h3>
+                        <p class="about__card-text">Современный SPA-комплекс с бассейном и сауной</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="rooms" id="rooms">
+        <div class="container">
+            <span class="section-tag">Номера</span>
+            <h2 class="section-title">Выберите свой идеальный отдых</h2>
+            
+            <div class="rooms__filter">
+                <button class="rooms__filter-btn active" data-filter="all">Все</button>
+                <button class="rooms__filter-btn" data-filter="standard">Стандарт</button>
+                <button class="rooms__filter-btn" data-filter="comfort">Комфорт</button>
+                <button class="rooms__filter-btn" data-filter="premium">Премиум</button>
+            </div>
+
+            <div class="rooms__grid">
+                <div class="rooms__card" data-category="standard">
+                    <div class="rooms__image">
+                        <img src="Trash/Screenshot_7.png" alt="Стандартный номер" loading="lazy">
+                        <div class="rooms__badge">Стандарт</div>
+                    </div>
+                    <div class="rooms__info">
+                        <h3 class="rooms__title">Стандарт</h3>
+                        <p class="rooms__desc">Уютный номер с видом на сад</p>
+                        <div class="rooms__meta">
+                            <span class="rooms__size">28 м²</span>
+                            <span class="rooms__guests">2 гостя</span>
+                        </div>
+                        <div class="rooms__footer">
+                            <span class="rooms__price">от 25 000 ₸</span>
+                            <button class="rooms__btn" data-room="standard">Выбрать</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rooms__card" data-category="comfort">
+                    <div class="rooms__image">
+                        <img src="Trash/Screenshot_3.png" alt="Номер Комфорт" loading="lazy">
+                        <div class="rooms__badge">Комфорт</div>
+                    </div>
+                    <div class="rooms__info">
+                        <h3 class="rooms__title">Комфорт</h3>
+                        <p class="rooms__desc">Просторный номер с балконом</p>
+                        <div class="rooms__meta">
+                            <span class="rooms__size">42 м²</span>
+                            <span class="rooms__guests">3 гостя</span>
+                        </div>
+                        <div class="rooms__footer">
+                            <span class="rooms__price">от 40 000 ₸</span>
+                            <button class="rooms__btn" data-room="comfort">Выбрать</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rooms__card" data-category="premium">
+                    <div class="rooms__image">
+                        <img src="Trash/Screenshot_4.png" alt="Номер Премиум" loading="lazy">
+                        <div class="rooms__badge">Премиум</div>
+                    </div>
+                    <div class="rooms__info">
+                        <h3 class="rooms__title">Премиум</h3>
+                        <p class="rooms__desc">Люкс с панорамным видом на озеро</p>
+                        <div class="rooms__meta">
+                            <span class="rooms__size">65 м²</span>
+                            <span class="rooms__guests">4 гостя</span>
+                        </div>
+                        <div class="rooms__footer">
+                            <span class="rooms__price">от 70 000 ₸</span>
+                            <button class="rooms__btn" data-room="premium">Выбрать</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rooms__card" data-category="premium">
+                    <div class="rooms__image">
+                        <img src="Trash/Screenshot_4.png" alt="Семейный люкс" loading="lazy">
+                        <div class="rooms__badge">Премиум</div>
+                    </div>
+                    <div class="rooms__info">
+                        <h3 class="rooms__title">Семейный люкс</h3>
+                        <p class="rooms__desc">Двухкомнатный номер для семьи</p>
+                        <div class="rooms__meta">
+                            <span class="rooms__size">85 м²</span>
+                            <span class="rooms__guests">6 гостей</span>
+                        </div>
+                        <div class="rooms__footer">
+                            <span class="rooms__price">от 95 000 ₸</span>
+                            <button class="rooms__btn" data-room="premium">Выбрать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <span class="section-tag">Услуги</span>
+            <h2 class="section-title">Всё для вашего комфорта</h2>
+            
+            <div class="services__grid">
+                <div class="services__card services__card--large">
+                    <div class="services__content">
+                        <div class="services__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M7 12l5 5l10 -10"/>
+                                <path d="M2 12l5 5m5 -5l5 -5"/>
+                            </svg>
+                        </div>
+                        <h3 class="services__title">SPA & Wellness</h3>
+                        <p class="services__text">
+                            Полный спектр SPA-процедур: массаж, обёртывания, 
+                            гидротерапия, косметологические услуги. 
+                            Бассейн с подогревом, финская сауна, хаммам.
+                        </p>
+                        <ul class="services__list">
+                            <li>Массажные программы</li>
+                            <li>Термальный комплекс</li>
+                            <li>Косметология</li>
+                            <li>Ароматерапия</li>
+                        </ul>
+                    </div>
+                    <div class="services__image">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/View_of_Burabay_lake_and_Kokshe_mountains.jpg" alt="SPA" loading="lazy">
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <div class="services__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4.5 12.5l-2.5 2.5l2.5 2.5"/>
+                            <path d="M19.5 12.5l2.5 2.5l-2.5 2.5"/>
+                            <path d="M12 3v17"/>
+                            <path d="M8 7h8"/>
+                            <path d="M8 17h8"/>
+                        </svg>
+                    </div>
+                    <h3 class="services__title">Лечение</h3>
+                    <p class="services__text">Медицинские программы оздоровления под наблюдением специалистов</p>
+                </div>
+
+                <div class="services__card">
+                    <div class="services__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 12h18"/>
+                            <path d="M3 6h18"/>
+                            <path d="M3 18h18"/>
+                            <path d="M9 6v12"/>
+                            <path d="M15 6v12"/>
+                        </svg>
+                    </div>
+                    <h3 class="services__title">Питание</h3>
+                    <p class="services__text">Шведский стол, диетическое и детокс-меню от шеф-повара</p>
+                </div>
+
+                <div class="services__card">
+                    <div class="services__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="8" cy="8" r="6"/>
+                                <path d="M12 14l4 4"/>
+                                <circle cx="18" cy="8" r="4"/>
+                            </svg>
+                    </div>
+                    <h3 class="services__title">Экскурсии</h3>
+                    <p class="services__text">Организованные туры по достопримечательностям Бурабая</p>
+                </div>
+
+                <div class="services__card">
+                    <div class="services__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M6 5v14"/>
+                            <path d="M18 5v14"/>
+                            <path d="M3 9h18"/>
+                            <path d="M3 15h18"/>
+                        </svg>
+                    </div>
+                    <h3 class="services__title">Спорт</h3>
+                    <p class="services__text">Фитнес-зал, йога-студия, теннисные корты, велопрокат</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <span class="section-tag">Галерея</span>
+            <h2 class="section-title">Моменты спокойствия</h2>
+        </div>
+        
+        <div class="gallery__grid">
+            <div class="gallery__item gallery__item--large">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Forest_of_the_Burabay.jpg" alt="Природа Щучинска" loading="lazy">
+                <div class="gallery__overlay">
+                    <span>Природа</span>
+                </div>
+            </div>
+            <div class="gallery__item">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Burabay_mountains.jpg" alt="Бассейн" loading="lazy">
+                <div class="gallery__overlay">
+                    <span>Бассейн</span>
+                </div>
+            </div>
+            <div class="gallery__item">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Shchuchye.jpg" alt="SPA процедуры" loading="lazy">
+                <div class="gallery__overlay">
+                    <span>SPA</span>
+                </div>
+            </div>
+            <div class="gallery__item">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Borovoe_Classic.jpg" alt="Отдых" loading="lazy">
+                <div class="gallery__overlay">
+                    <span>Релакс</span>
+                </div>
+            </div>
+            <div class="gallery__item gallery__item--tall">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Burabay_lakes.jpg" alt="Озеро" loading="lazy">
+                <div class="gallery__overlay">
+                    <span>Озеро</span>
+                </div>
+            </div>
+            <div class="gallery__item">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Landscape_in_Burabai.jpg" alt="Лес" loading="lazy">
+                <div class="gallery__overlay">
+                    <span>Лес</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <span class="section-tag">Отзывы</span>
+            <h2 class="section-title">Что говорят наши гости</h2>
+        </div>
+
+        <div class="reviews__slider">
+            <div class="reviews__track" id="reviewsTrack">
+                <div class="reviews__slide">
+                    <div class="reviews__card">
+                        <div class="reviews__rating">
+                            ★★★★★
+                        </div>
+                        <p class="reviews__text">
+                            «Невероятное место! Тишина, покой, потрясающие виды. 
+                            Персонал внимательный, процедуры эффективные. 
+                            Уже планируем вернуться следующим летом.»
+                        </p>
+                        <div class="reviews__author">
+                            <div class="reviews__avatar">А</div>
+                            <div class="reviews__info">
+                                <span class="reviews__name">Анна К.</span>
+                                <span class="reviews__location">Алматы</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviews__slide">
+                    <div class="reviews__card">
+                        <div class="reviews__rating">
+                            ★★★★★
+                        </div>
+                        <p class="reviews__text">
+                            «Отдыхали с семьёй в семейном люксе. Всё на высшем уровне: 
+                            номера, питание, SPA. Дети в восторге от бассейна. 
+                            Рекомендую всем!»
+                        </p>
+                        <div class="reviews__author">
+                            <div class="reviews__avatar">М</div>
+                            <div class="reviews__info">
+                                <span class="reviews__name">Михаил Р.</span>
+                                <span class="reviews__location">Астана</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviews__slide">
+                    <div class="reviews__card">
+                        <div class="reviews__rating">
+                            ★★★★★
+                        </div>
+                        <p class="reviews__text">
+                            «Проходила программу детокса — результат превзошёл ожидания. 
+                            Минус 5 кг, кожа сияет, энергии хоть отбавляй. 
+                            Спасибо профессионалам!»
+                        </p>
+                        <div class="reviews__author">
+                            <div class="reviews__avatar">Е</div>
+                            <div class="reviews__info">
+                                <span class="reviews__name">Елена В.</span>
+                                <span class="reviews__location">Караганда</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviews__slide">
+                    <div class="reviews__card">
+                        <div class="reviews__rating">
+                            ★★★★★
+                        </div>
+                        <p class="reviews__text">
+                            «Идеальное место для цифрового детокса. 
+                            Никакого шума города, только природа и забота о себе. 
+                            Массаж и термы — отдельно восторг!»
+                        </p>
+                        <div class="reviews__author">
+                            <div class="reviews__avatar">Д</div>
+                            <div class="reviews__info">
+                                <span class="reviews__name">Дмитрий С.</span>
+                                <span class="reviews__location">Шымкент</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews__controls">
+                <button class="reviews__nav reviews__nav--prev" id="prevBtn" aria-label="Назад">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                <div class="reviews__pagination" id="pagination"></div>
+                <button class="reviews__nav reviews__nav--next" id="nextBtn" aria-label="Вперёд">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking" id="booking">
+        <div class="container">
+            <div class="booking__grid">
+                <div class="booking__content">
+                    <span class="section-tag">Бронирование</span>
+                    <h2 class="section-title">Забронируйте свой отдых</h2>
+                    <p class="booking__text">
+                        Оставьте заявку и наш менеджер свяжется с вами в течение 15 минут 
+                        для подтверждения бронирования.
+                    </p>
+                    
+                    <form class="booking__form" id="bookingForm">
+                        <div class="booking__row">
+                            <div class="booking__field">
+                                <label class="booking__label" for="checkIn">Дата заезда</label>
+                                <input type="date" class="booking__input" id="checkIn" name="checkIn" required>
+                            </div>
+                            <div class="booking__field">
+                                <label class="booking__label" for="checkOut">Дата выезда</label>
+                                <input type="date" class="booking__input" id="checkOut" name="checkOut" required>
+                            </div>
+                        </div>
+
+                        <div class="booking__row">
+                            <div class="booking__field">
+                                <label class="booking__label" for="roomType">Тип номера</label>
+                                <select class="booking__input booking__select" id="roomType" name="roomType" required>
+                                    <option value="">Выберите номер</option>
+                                    <option value="standard">Стандарт</option>
+                                    <option value="comfort">Комфорт</option>
+                                    <option value="premium">Премиум</option>
+                                </select>
+                            </div>
+                            <div class="booking__field">
+                                <label class="booking__label" for="guests">Гости</label>
+                                <select class="booking__input booking__select" id="guests" name="guests" required>
+                                    <option value="">Выберите</option>
+                                    <option value="1">1 гость</option>
+                                    <option value="2">2 гостя</option>
+                                    <option value="3">3 гостя</option>
+                                    <option value="4">4+ гостей</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="booking__row">
+                            <div class="booking__field">
+                                <label class="booking__label" for="name">Ваше имя</label>
+                                <input type="text" class="booking__input" id="name" name="name" placeholder="Иван Иванов" required>
+                            </div>
+                            <div class="booking__field">
+                                <label class="booking__label" for="phone">Телефон</label>
+                                <input type="tel" class="booking__input" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="booking__btn">
+                            <span>Забронировать</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+
+                        <p class="booking__privacy">
+                            Нажимая кнопку, вы соглашаетесь с 
+                            <a href="#">политикой конфиденциальности</a>
+                        </p>
+                    </form>
+                </div>
+
+                <div class="booking__info">
+                    <div class="booking__image">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/View_of_Burabay_lake_and_Kokshe_mountains.jpg" alt="Санаторий" loading="lazy">
+                    </div>
+                    <div class="booking__contacts">
+                        <div class="booking__contact">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z"/>
+                                <path d="M3 7l9 6l9 -6"/>
+                            </svg>
+                            <span>booking@shchuchinsk.kz</span>
+                        </div>
+                        <div class="booking__contact">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"/>
+                            </svg>
+                            <span>+7 (71636) 2-XX-XX</span>
+                        </div>
+                        <div class="booking__contact">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 21a9 9 0 1 0 0 -18a9 9 0 0 0 0 18z"/>
+                                <path d="M12 7v5l3 3"/>
+                            </svg>
+                            <span>Ежедневно: 08:00 — 20:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="#" class="nav__logo">
+                        <span class="nav__logo-icon">◆</span>
+                        <span class="nav__logo-text">Щучинск</span>
+                    </a>
+                    <p class="footer__desc">
+                        Премиальный санаторий в сердце Казахстана. 
+                        Ваш идеальный отдых начинается здесь.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                                <circle cx="12" cy="12" r="4"/>
+                                <circle cx="18" cy="6" r="1"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M18 2h-3a5 5 0 0 0 -5 5v3h-3v4h3v8h4v-8h3l1 -4h-4v-3a1 1 0 0 1 1 -1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"/>
+                                <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__title">Навигация</h4>
+                    <ul class="footer__list">
+                        <li><a href="about.html">О санатории</a></li>
+                        <li><a href="rooms.html">Номера</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="booking.html">Бронирование</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__title">Услуги</h4>
+                    <ul class="footer__list">
+                        <li><a href="#">SPA & Wellness</a></li>
+                        <li><a href="#">Лечение</a></li>
+                        <li><a href="#">Питание</a></li>
+                        <li><a href="#">Экскурсии</a></li>
+                        <li><a href="#">Спорт</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__map">
+                    <h4 class="footer__title">Мы на карте</h4>
+                    <div class="footer__map-wrapper">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Forest_of_the_Burabay.jpg" alt="Карта" class="footer__map-img" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2026 Щучинск Санаторий. Все права защищены.</p>
+                <div class="footer__legal">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox__close" id="lightboxClose" aria-label="Закрыть">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6L6 18M6 6l12 12"/>
+            </svg>
+        </button>
+        <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Назад">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M15 18l-6-6 6-6"/>
+            </svg>
+        </button>
+        <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Вперёд">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 18l6-6-6-6"/>
+            </svg>
+        </button>
+        <div class="lightbox__content">
+            <img src="" alt="" id="lightboxImg">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+

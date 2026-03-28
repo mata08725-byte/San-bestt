@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Номера и люксы санатория в Щучинске — премиальный отдых с видом на природу">
+    <title>Номера и Люксы | Щучинск Санаторий</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader__content">
+            <div class="preloader__logo">
+                <span class="preloader__letter preloader__letter--1">Щ</span>
+                <span class="preloader__letter preloader__letter--2">У</span>
+                <span class="preloader__letter preloader__letter--3">Ч</span>
+            </div>
+            <div class="preloader__line"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="container nav__container">
+            <a href="index.html" class="nav__logo">
+                <span class="nav__logo-icon">◆</span>
+                <span class="nav__logo-text">Щучинск</span>
+            </a>
+            <ul class="nav__menu" id="navMenu">
+                <li class="nav__item"><a href="about.html" class="nav__link">О санатории</a></li>
+                <li class="nav__item"><a href="rooms.html" class="nav__link nav__link--active">Номера</a></li>
+                <li class="nav__item"><a href="services.html" class="nav__link">Услуги</a></li>
+                <li class="nav__item"><a href="gallery.html" class="nav__link">Галерея</a></li>
+                <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+                <li class="nav__item"><a href="booking.html" class="nav__link nav__link--cta">Забронировать</a></li>
+            </ul>
+            <button class="nav__toggle" id="navToggle" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header__bg">
+            <div class="page-header__overlay"></div>
+        </div>
+        <div class="container page-header__content">
+            <h1 class="page-header__title">Номера и Люксы</h1>
+            <p class="page-header__subtitle">Выберите идеальное пространство для вашего отдыха</p>
+            <nav class="breadcrumb">
+                <a href="index.html">Главная</a>
+                <span class="breadcrumb__separator">/</span>
+                <span class="breadcrumb__current">Номера</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Rooms Catalog -->
+    <section class="rooms-catalog">
+        <div class="container">
+            <div class="rooms-catalog__header">
+                <div class="rooms-catalog__filter">
+                    <button class="rooms__filter-btn active" data-filter="all">Все номера</button>
+                    <button class="rooms__filter-btn" data-filter="standard">Стандарт</button>
+                    <button class="rooms__filter-btn" data-filter="comfort">Комфорт</button>
+                    <button class="rooms__filter-btn" data-filter="premium">Премиум</button>
+                </div>
+                <div class="rooms-catalog__sort">
+                    <select class="rooms-catalog__select" id="sortSelect">
+                        <option value="popular">По популярности</option>
+                        <option value="price-asc">По цене (возрастание)</option>
+                        <option value="price-desc">По цене (убывание)</option>
+                        <option value="size">По площади</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="rooms-catalog__grid">
+                <!-- Standard Room -->
+                <article class="room-card" data-category="standard" data-price="25000" data-size="28">
+                    <div class="room-card__image">
+                        <img src="Trash/Screenshot_7.png" alt="Стандартный номер" loading="lazy">
+                        <div class="room-card__badge">Стандарт</div>
+                        <button class="room-card__favorite" aria-label="В избранное">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4.318 6.318a4.5 4.5 0 0 0 0 6.364L12 20.364l7.682-7.682a4.5 4.5 0 0 0-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 0 0-6.364 0z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="room-card__content">
+                        <div class="room-card__header">
+                            <h3 class="room-card__title">Стандарт</h3>
+                            <span class="room-card__price">от 25 000 ₸</span>
+                        </div>
+                        <p class="room-card__desc">Уютный номер с видом на сад для комфортного отдыха</p>
+                        <div class="room-card__features">
+                            <span class="room-card__feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M3 3v18h18"/>
+                                    <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/>
+                                </svg>
+                                28 м²
+                            </span>
+                            <span class="room-card__feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="8.5" cy="7" r="4"/>
+                                    <line x1="20" y1="8" x2="20" y2="14"/>
+                                    <line x1="23" y1="11" x2="17" y2="11"/>
+                                </svg>
+                                2 гостя
+                            </span>
+                            <span class="room-card__feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                    <path d="M3 9h18"/>
+                                    <path d="M9 21V9"/>
+                                </svg>
+                                Вид на сад
+                            </span>
+                        </div>
+                        <div class="room-card__amenities">
+                            <span class="room-card__amenity">Wi-Fi</span>
+                            <span class="room-card__amenity">Кондиционер</span>
+                            <span class="room-card__amenity">TV</span>
+                            <span class="room-card__amenity">Мини-бар</span>
+                        </div>
+                        <div class="room-card__footer">
+                            <a href="room-standard.html" class="room-card__details">Подробнее</a>
+                            <a href="booking.html?room=standard" class="room-card__btn">Забронировать</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Comfort Room -->
+                <article class="room-card" data-category="comfort" data-price="40000" data-size="42">
+                    <div class="room-card__image">
+                        <img src="Trash/Screenshot_3.png" alt="Номер Комфорт" loading="lazy">
+                        <div class="room-card__badge">Комфорт</div>
+                        <button class="room-card__favorite" aria-label="В избранное">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4.318 6.318a4.5 4.5 0 0 0 0 6.364L12 20.364l7.682-7.682a4.5 4.5 0 0 0-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 0 0-6.364 0z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="room-card__content">
+                        <div class="room-card__header">
+                            <h3 class="room-card__title">Комфорт</h3>
+                            <span class="room-card__price">от 40 000 ₸</span>
+                        </div>
+                        <p class="room-card__desc">Просторный номер с балконом и панорамными окнами</p>
+                        <div class="room-card__features">
+                            <span class="room-card__feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M3 3v18h18"/>
+                                    <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/>
+                                </svg>
+                                42 м²
+                            </span>
+                            <span class="room-card__feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="8.5" cy="7" r="4"/>
+                                    <line x1="20" y1="8" x2="20" y2="14"/>
+                                    <line x1="23" y1="11" x2="17" y2="11"/>
+                                </svg>
+                                3 гостя
+                            </span>
+                            <span class="room-card__feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                    <path d="M3 9h18"/>
+                                    <path d="M9 21V9"/>
+                                </svg>
+                                Вид на озеро
+                            </span>
+                        </div>
+                        <div class="room-card__amenities">
+                            <span class="room-card__amenity">Wi-Fi</span>
+                            <span class="room-card__amenity">Кондиционер</span>
+                            <span class="room-card__amenity">TV</span>
+                            <span class="room-card__amenity">Балкон</span>
+                            <span class="room-card__amenity">Кофемашина</span>
+                        </div>
+                        <div class="room-card__footer">
+                            <a href="room-comfort.html" class="room-card__details">Подробнее</a>
+                            <a href="booking.html?room=comfort" class="room-card__btn">Забронировать</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Premium Room -->
+                <article class="room-card" data-category="premium" data-price="70000" data-size="65">
+                    <div class="room-card__image">
+                        <img src="Trash/Screenshot_4.png" alt="Номер Премиум" loading="lazy">
+                        <div class="room-card__badge room-card__badge--premium">Премиум</div>
+                        <button class="room-card__favorite" aria-label="В избранное">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4.318 6.318a4.5 4.5 0 0 0 0 6.364L12 20.364l7.682-7.682a4.5 4.5 0 0 0-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 0 0-6.364 0z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="room-card__content">
+                        <div class="room-card__header">
+                            <h3 class="room-card__title">Премиум</h3>
+                            <span class="room-card__price">от 70 000 ₸</span>
+                        </div>
+                        <p class="room-card__desc">Люкс с панорамным видом на озеро и гостиной зоной</p>
+                        <div class="room-card__features">
+                            <span class="room-card__feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M3 3v18h18"/>
+                                    <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/>
+                                </svg>
+                                65 м²
+                            </span>
+                            <span class="room-card__feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="8.5" cy="7" r="4"/>
+                                    <line x1="20" y1="8" x2="20" y2="14"/>
+                                    <line x1="23" y1="11" x2="17" y2="11"/>
+                                </svg>
+                                4 гостя
+                            </span>
+                            <span class="room-card__feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                    <path d="M3 9h18"/>
+                                    <path d="M9 21V9"/>
+                                </svg>
+                                Панорамный вид
+                            </span>
+                        </div>
+                        <div class="room-card__amenities">
+                            <span class="room-card__amenity">Wi-Fi</span>
+                            <span class="room-card__amenity">Кондиционер</span>
+                            <span class="room-card__amenity">TV 55"</span>
+                            <span class="room-card__amenity">Джакузи</span>
+                            <span class="room-card__amenity">Мини-бар</span>
+                            <span class="room-card__amenity">Халаты</span>
+                        </div>
+                        <div class="room-card__footer">
+                            <a href="room-premium.html" class="room-card__details">Подробнее</a>
+                            <a href="booking.html?room=premium" class="room-card__btn">Забронировать</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Family Suite -->
+                <article class="room-card" data-category="premium" data-price="95000" data-size="85">
+                    <div class="room-card__image">
+                        <img src="Trash/Screenshot_4.png" alt="Семейный люкс" loading="lazy">
+                        <div class="room-card__badge room-card__badge--premium">Семейный</div>
+                        <button class="room-card__favorite" aria-label="В избранное">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4.318 6.318a4.5 4.5 0 0 0 0 6.364L12 20.364l7.682-7.682a4.5 4.5 0 0 0-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 0 0-6.364 0z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="room-card__content">
+                        <div class="room-card__header">
+                            <h3 class="room-card__title">Семейный люкс</h3>
+                            <span class="room-card__price">от 95 000 ₸</span>
+                        </div>
+                        <p class="room-card__desc">Двухкомнатный номер для семьи с детской зоной</p>
+                        <div class="room-card__features">
+                            <span class="room-card__feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M3 3v18h18"/>
+                                    <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/>
+                                </svg>
+                                85 м²
+                            </span>
+                            <span class="room-card__feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="8.5" cy="7" r="4"/>
+                                    <line x1="20" y1="8" x2="20" y2="14"/>
+                                    <line x1="23" y1="11" x2="17" y2="11"/>
+                                </svg>
+                                6 гостей
+                            </span>
+                            <span class="room-card__feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                    <path d="M3 9h18"/>
+                                    <path d="M9 21V9"/>
+                                </svg>
+                                2 комнаты
+                            </span>
+                        </div>
+                        <div class="room-card__amenities">
+                            <span class="room-card__amenity">Wi-Fi</span>
+                            <span class="room-card__amenity">2 кондиционера</span>
+                            <span class="room-card__amenity">2 TV</span>
+                            <span class="room-card__amenity">Кухня</span>
+                            <span class="room-card__amenity">Ванная</span>
+                            <span class="room-card__amenity">Детская зона</span>
+                        </div>
+                        <div class="room-card__footer">
+                            <a href="room-family.html" class="room-card__details">Подробнее</a>
+                            <a href="booking.html?room=family" class="room-card__btn">Забронировать</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Presidential Suite -->
+                <article class="room-card" data-category="premium" data-price="150000" data-size="120">
+                    <div class="room-card__image">
+                        <img src="Trash/Screenshot_3.png" alt="Президентский люкс" loading="lazy">
+                        <div class="room-card__badge room-card__badge--exclusive">Эксклюзив</div>
+                        <button class="room-card__favorite" aria-label="В избранное">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4.318 6.318a4.5 4.5 0 0 0 0 6.364L12 20.364l7.682-7.682a4.5 4.5 0 0 0-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 0 0-6.364 0z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="room-card__content">
+                        <div class="room-card__header">
+                            <h3 class="room-card__title">Президентский люкс</h3>
+                            <span class="room-card__price">от 150 000 ₸</span>
+                        </div>
+                        <p class="room-card__desc">Роскошный номер с террасой, камином и личным сервисом</p>
+                        <div class="room-card__features">
+                            <span class="room-card__feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M3 3v18h18"/>
+                                    <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/>
+                                </svg>
+                                120 м²
+                            </span>
+                            <span class="room-card__feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="8.5" cy="7" r="4"/>
+                                    <line x1="20" y1="8" x2="20" y2="14"/>
+                                    <line x1="23" y1="11" x2="17" y2="11"/>
+                                </svg>
+                                4 гостя
+                            </span>
+                            <span class="room-card__feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                    <path d="M3 9h18"/>
+                                    <path d="M9 21V9"/>
+                                </svg>
+                                Терраса
+                            </span>
+                        </div>
+                        <div class="room-card__amenities">
+                            <span class="room-card__amenity">Wi-Fi</span>
+                            <span class="room-card__amenity">Камин</span>
+                            <span class="room-card__amenity">Сауна</span>
+                            <span class="room-card__amenity">Джакузи</span>
+                            <span class="room-card__amenity">Бар</span>
+                            <span class="room-card__amenity">Дворецкий</span>
+                        </div>
+                        <div class="room-card__footer">
+                            <a href="room-presidential.html" class="room-card__details">Подробнее</a>
+                            <a href="booking.html?room=presidential" class="room-card__btn">Забронировать</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Deluxe Room -->
+                <article class="room-card" data-category="comfort" data-price="55000" data-size="50">
+                    <div class="room-card__image">
+                        <img src="Trash/Screenshot_5.png" alt="Делюкс номер" loading="lazy">
+                        <div class="room-card__badge">Делюкс</div>
+                        <button class="room-card__favorite" aria-label="В избранное">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4.318 6.318a4.5 4.5 0 0 0 0 6.364L12 20.364l7.682-7.682a4.5 4.5 0 0 0-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 0 0-6.364 0z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="room-card__content">
+                        <div class="room-card__header">
+                            <h3 class="room-card__title">Делюкс</h3>
+                            <span class="room-card__price">от 55 000 ₸</span>
+                        </div>
+                        <p class="room-card__desc">Стильный номер с рабочей зоной и улучшенной отделкой</p>
+                        <div class="room-card__features">
+                            <span class="room-card__feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M3 3v18h18"/>
+                                    <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/>
+                                </svg>
+                                50 м²
+                            </span>
+                            <span class="room-card__feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="8.5" cy="7" r="4"/>
+                                    <line x1="20" y1="8" x2="20" y2="14"/>
+                                    <line x1="23" y1="11" x2="17" y2="11"/>
+                                </svg>
+                                3 гостя
+                            </span>
+                            <span class="room-card__feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                    <path d="M3 9h18"/>
+                                    <path d="M9 21V9"/>
+                                </svg>
+                                Вид на лес
+                            </span>
+                        </div>
+                        <div class="room-card__amenities">
+                            <span class="room-card__amenity">Wi-Fi</span>
+                            <span class="room-card__amenity">Кондиционер</span>
+                            <span class="room-card__amenity">TV 50"</span>
+                            <span class="room-card__amenity">Рабочая зона</span>
+                            <span class="room-card__amenity">Мини-бар</span>
+                        </div>
+                        <div class="room-card__footer">
+                            <a href="room-deluxe.html" class="room-card__details">Подробнее</a>
+                            <a href="booking.html?room=deluxe" class="room-card__btn">Забронировать</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- No Results -->
+            <div class="rooms-catalog__empty" id="emptyState" style="display: none;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                </svg>
+                <h3>Номера не найдены</h3>
+                <p>Попробуйте изменить параметры фильтрации</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta__content">
+                <h2 class="cta__title">Не нашли подходящий номер?</h2>
+                <p class="cta__text">Наши менеджеры помогут подобрать идеальный вариант для вашего отдыха</p>
+                <a href="contacts.html" class="cta__btn">Связаться с нами</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="index.html" class="nav__logo">
+                        <span class="nav__logo-icon">◆</span>
+                        <span class="nav__logo-text">Щучинск</span>
+                    </a>
+                    <p class="footer__desc">
+                        Премиальный санаторий в сердце Казахстана. 
+                        Ваш идеальный отдых начинается здесь.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                                <circle cx="12" cy="12" r="4"/>
+                                <circle cx="18" cy="6" r="1"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M18 2h-3a5 5 0 0 0 -5 5v3h-3v4h3v8h4v-8h3l1 -4h-4v-3a1 1 0 0 1 1 -1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"/>
+                                <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__title">Навигация</h4>
+                    <ul class="footer__list">
+                        <li><a href="about.html">О санатории</a></li>
+                        <li><a href="rooms.html">Номера</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="booking.html">Бронирование</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__title">Услуги</h4>
+                    <ul class="footer__list">
+                        <li><a href="services.html#spa">SPA & Wellness</a></li>
+                        <li><a href="services.html#treatment">Лечение</a></li>
+                        <li><a href="services.html#food">Питание</a></li>
+                        <li><a href="services.html#excursions">Экскурсии</a></li>
+                        <li><a href="services.html#sport">Спорт</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__map">
+                    <h4 class="footer__title">Мы на карте</h4>
+                    <div class="footer__map-wrapper">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Burabay_mountains.jpg" alt="Карта" class="footer__map-img" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2026 Щучинск Санаторий. Все права защищены.</p>
+                <div class="footer__legal">
+                    <a href="privacy.html">Политика конфиденциальности</a>
+                    <a href="terms.html">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="pages.js"></script>
+</body>
+</html>
+
+
+
+

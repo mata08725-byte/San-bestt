@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Услуги санатория в Щучинске — SPA, лечение, питание, экскурсии и спорт">
+    <title>Услуги | Щучинск Санаторий</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader__content">
+            <div class="preloader__logo">
+                <span class="preloader__letter preloader__letter--1">Щ</span>
+                <span class="preloader__letter preloader__letter--2">У</span>
+                <span class="preloader__letter preloader__letter--3">Ч</span>
+            </div>
+            <div class="preloader__line"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="container nav__container">
+            <a href="index.html" class="nav__logo">
+                <span class="nav__logo-icon">◆</span>
+                <span class="nav__logo-text">Щучинск</span>
+            </a>
+            <ul class="nav__menu" id="navMenu">
+                <li class="nav__item"><a href="about.html" class="nav__link">О санатории</a></li>
+                <li class="nav__item"><a href="rooms.html" class="nav__link">Номера</a></li>
+                <li class="nav__item"><a href="services.html" class="nav__link nav__link--active">Услуги</a></li>
+                <li class="nav__item"><a href="gallery.html" class="nav__link">Галерея</a></li>
+                <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+                <li class="nav__item"><a href="booking.html" class="nav__link nav__link--cta">Забронировать</a></li>
+            </ul>
+            <button class="nav__toggle" id="navToggle" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header__bg">
+            <div class="page-header__overlay"></div>
+        </div>
+        <div class="container page-header__content">
+            <h1 class="page-header__title">Услуги и Сервис</h1>
+            <p class="page-header__subtitle">Всё для вашего комфортного отдыха и оздоровления</p>
+            <nav class="breadcrumb">
+                <a href="index.html">Главная</a>
+                <span class="breadcrumb__separator">/</span>
+                <span class="breadcrumb__current">Услуги</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Services Categories -->
+    <section class="services-nav">
+        <div class="container">
+            <div class="services-nav__list">
+                <a href="#spa" class="services-nav__item">
+                    <span class="services-nav__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 21a9 9 0 0 0 9 -9a9 9 0 0 0 -9 -9a9 9 0 0 0 -9 9a9 9 0 0 0 9 9z"/>
+                            <path d="M12 7v5l3 3"/>
+                        </svg>
+                    </span>
+                    <span>SPA & Wellness</span>
+                </a>
+                <a href="#treatment" class="services-nav__item">
+                    <span class="services-nav__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4.5 12.5l-2.5 2.5l2.5 2.5"/>
+                            <path d="M19.5 12.5l2.5 2.5l-2.5 2.5"/>
+                            <path d="M12 3v17"/>
+                        </svg>
+                    </span>
+                    <span>Лечение</span>
+                </a>
+                <a href="#food" class="services-nav__item">
+                    <span class="services-nav__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 12h18"/>
+                            <path d="M3 6h18"/>
+                            <path d="M3 18h18"/>
+                        </svg>
+                    </span>
+                    <span>Питание</span>
+                </a>
+                <a href="#excursions" class="services-nav__item">
+                    <span class="services-nav__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="8" cy="8" r="6"/>
+                            <path d="M12 14l4 4"/>
+                        </svg>
+                    </span>
+                    <span>Экскурсии</span>
+                </a>
+                <a href="#sport" class="services-nav__item">
+                    <span class="services-nav__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M6 5v14"/>
+                            <path d="M18 5v14"/>
+                            <path d="M3 9h18"/>
+                            <path d="M3 15h18"/>
+                        </svg>
+                    </span>
+                    <span>Спорт</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPA Section -->
+    <section class="service-section" id="spa">
+        <div class="container">
+            <div class="service-section__grid">
+                <div class="service-section__content">
+                    <span class="section-tag">SPA & Wellness</span>
+                    <h2 class="section-title">Восстановление тела и духа</h2>
+                    <p class="service-section__text">
+                        Наш SPA-комплекс — это оазис спокойствия в окружении природы. 
+                        Профессиональные терапевты подберут индивидуальные программы 
+                        для снятия стресса, восстановления энергии и улучшения самочувствия.
+                    </p>
+                    
+                    <div class="service-features">
+                        <div class="service-feature">
+                            <div class="service-feature__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"/>
+                                </svg>
+                            </div>
+                            <div class="service-feature__content">
+                                <h3 class="service-feature__title">Массажные программы</h3>
+                                <p class="service-feature__text">Классический, тайский, горячими камнями, антицеллюлитный</p>
+                            </div>
+                        </div>
+                        
+                        <div class="service-feature">
+                            <div class="service-feature__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 21a9 9 0 0 0 9 -9a9 9 0 0 0 -9 -9a9 9 0 0 0 -9 9a9 9 0 0 0 9 9z"/>
+                                    <path d="M12 7v5l3 3"/>
+                                </svg>
+                            </div>
+                            <div class="service-feature__content">
+                                <h3 class="service-feature__title">Термальный комплекс</h3>
+                                <p class="service-feature__text">Бассейн с подогревом, финская сауна, хаммам, инфракрасная сауна</p>
+                            </div>
+                        </div>
+                        
+                        <div class="service-feature">
+                            <div class="service-feature__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="4"/>
+                                    <path d="M12 2v2"/>
+                                    <path d="M12 20v2"/>
+                                    <path d="M2 12h2"/>
+                                    <path d="M20 12h2"/>
+                                </svg>
+                            </div>
+                            <div class="service-feature__content">
+                                <h3 class="service-feature__title">Косметология</h3>
+                                <p class="service-feature__text">Уход за лицом и телом, обёртывания, пилинги</p>
+                            </div>
+                        </div>
+                        
+                        <div class="service-feature">
+                            <div class="service-feature__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 3v18"/>
+                                    <path d="M8 7l4-4 4 4"/>
+                                    <path d="M8 17l4 4 4-4"/>
+                                </svg>
+                            </div>
+                            <div class="service-feature__content">
+                                <h3 class="service-feature__title">Ароматерапия</h3>
+                                <p class="service-feature__text">Сеансы с эфирными маслами для релаксации и гармонии</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="booking.html" class="btn btn--primary">Записаться на процедуру</a>
+                </div>
+                
+                <div class="service-section__images">
+                    <div class="service-section__image service-section__image--large">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Shchuchye.jpg" alt="SPA процедуры" loading="lazy">
+                    </div>
+                    <div class="service-section__image">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Borovoe_Classic.jpg" alt="Массаж" loading="lazy">
+                    </div>
+                    <div class="service-section__image">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Burabay_lakes.jpg" alt="SPA салон" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treatment Section -->
+    <section class="service-section service-section--reverse" id="treatment">
+        <div class="container">
+            <div class="service-section__grid service-section__grid--reverse">
+                <div class="service-section__content">
+                    <span class="section-tag">Лечение</span>
+                    <h2 class="section-title">Медицинские программы оздоровления</h2>
+                    <p class="service-section__text">
+                        Под наблюдением опытных врачей мы разрабатываем индивидуальные 
+                        программы восстановления. Современные методики в сочетании с 
+                        природными факторами Щучинска дают потрясающие результаты.
+                    </p>
+                    
+                    <div class="service-features">
+                        <div class="service-feature">
+                            <div class="service-feature__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                                </svg>
+                            </div>
+                            <div class="service-feature__content">
+                                <h3 class="service-feature__title">Диагностика</h3>
+                                <p class="service-feature__text">Полное обследование организма перед началом программ</p>
+                            </div>
+                        </div>
+                        
+                        <div class="service-feature">
+                            <div class="service-feature__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M4.5 12.5l-2.5 2.5l2.5 2.5"/>
+                                    <path d="M19.5 12.5l2.5 2.5l-2.5 2.5"/>
+                                    <path d="M12 3v17"/>
+                                </svg>
+                            </div>
+                            <div class="service-feature__content">
+                                <h3 class="service-feature__title">Физиотерапия</h3>
+                                <p class="service-feature__text">Магнитотерапия, электрофорез, ультразвук</p>
+                            </div>
+                        </div>
+                        
+                        <div class="service-feature">
+                            <div class="service-feature__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 21a9 9 0 0 0 9 -9a9 9 0 0 0 -9 -9a9 9 0 0 0 -9 9a9 9 0 0 0 9 9z"/>
+                                </svg>
+                            </div>
+                            <div class="service-feature__content">
+                                <h3 class="service-feature__title">Бальнеотерапия</h3>
+                                <p class="service-feature__text">Лечебные ванны с минеральной водой из источников</p>
+                            </div>
+                        </div>
+                        
+                        <div class="service-feature">
+                            <div class="service-feature__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 3v18"/>
+                                    <path d="M8 7h8"/>
+                                    <path d="M8 17h8"/>
+                                </svg>
+                            </div>
+                            <div class="service-feature__content">
+                                <h3 class="service-feature__title">Реабилитация</h3>
+                                <p class="service-feature__text">Восстановление после травм и операций</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="booking.html" class="btn btn--primary">Консультация врача</a>
+                </div>
+                
+                <div class="service-section__images">
+                    <div class="service-section__image service-section__image--large">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Landscape_in_Burabai.jpg" alt="Лечение" loading="lazy">
+                    </div>
+                    <div class="service-section__image">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/View_of_Burabay_lake_and_Kokshe_mountains.jpg" alt="Медицина" loading="lazy">
+                    </div>
+                    <div class="service-section__image">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Forest_of_the_Burabay.jpg" alt="Диагностика" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Section -->
+    <section class="service-section" id="food">
+        <div class="container">
+            <div class="service-section__grid">
+                <div class="service-section__content">
+                    <span class="section-tag">Питание</span>
+                    <h2 class="section-title">Гастрономия от шеф-повара</h2>
+                    <p class="service-section__text">
+                        Наш ресторан предлагает изысканные блюда из свежих локаных продуктов. 
+                        Меню разработано с учётом принципов здорового питания и включает 
+                        опции для различных диетических потребностей.
+                    </p>
+                    
+                    <div class="food-options">
+                        <div class="food-option">
+                            <h4 class="food-option__title">🍽 Шведский стол</h4>
+                            <p class="food-option__text">Завтрак, обед и ужин с широким выбором блюд</p>
+                        </div>
+                        <div class="food-option">
+                            <h4 class="food-option__title">🥗 Диетическое меню</h4>
+                            <p class="food-option__text">Низкокалорийные блюда по рекомендации врача</p>
+                        </div>
+                        <div class="food-option">
+                            <h4 class="food-option__title">🍹 Детокс-программа</h4>
+                            <p class="food-option__text">Соки, смузи и лёгкие блюда для очищения</p>
+                        </div>
+                        <div class="food-option">
+                            <h4 class="food-option__title">👶 Детское питание</h4>
+                            <p class="food-option__text">Специальное меню для маленьких гостей</p>
+                        </div>
+                    </div>
+                    
+                    <a href="booking.html" class="btn btn--primary">Забронировать столик</a>
+                </div>
+                
+                <div class="service-section__images">
+                    <div class="service-section__image service-section__image--large">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Burabay_mountains.jpg" alt="Ресторан" loading="lazy">
+                    </div>
+                    <div class="service-section__image">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Shchuchye.jpg" alt="Здоровое питание" loading="lazy">
+                    </div>
+                    <div class="service-section__image">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Borovoe_Classic.jpg" alt="Блюда" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Excursions Section -->
+    <section class="service-section service-section--reverse" id="excursions">
+        <div class="container">
+            <div class="service-section__grid service-section__grid--reverse">
+                <div class="service-section__content">
+                    <span class="section-tag">Экскурсии</span>
+                    <h2 class="section-title">Исследуйте красоту Бурабая</h2>
+                    <p class="service-section__text">
+                        Щучинск и окрестности Бурабая — это край живописных озёр, 
+                        гор и древних легенд. Мы организуем незабываемые экскурсии 
+                        к самым красивым местам региона.
+                    </p>
+                    
+                    <div class="excursion-list">
+                        <div class="excursion-item">
+                            <div class="excursion-item__header">
+                                <h4 class="excursion-item__title">Озеро Бурабай</h4>
+                                <span class="excursion-item__duration">3 часа</span>
+                            </div>
+                            <p class="excursion-item__text">Легендарное озеро с кристально чистой водой</p>
+                        </div>
+                        
+                        <div class="excursion-item">
+                            <div class="excursion-item__header">
+                                <h4 class="excursion-item__title">Гора Кокшетау</h4>
+                                <span class="excursion-item__duration">5 часов</span>
+                            </div>
+                            <p class="excursion-item__text">Панорамный вид на весь регион с вершины</p>
+                        </div>
+                        
+                        <div class="excursion-item">
+                            <div class="excursion-item__header">
+                                <h4 class="excursion-item__title">Скала Влюблённых</h4>
+                                <span class="excursion-item__duration">2 часа</span>
+                            </div>
+                            <p class="excursion-item__text">Романтическое место с древней легендой</p>
+                        </div>
+                        
+                        <div class="excursion-item">
+                            <div class="excursion-item__header">
+                                <h4 class="excursion-item__title">Нацпарк Бурабай</h4>
+                                <span class="excursion-item__duration">6 часов</span>
+                            </div>
+                            <p class="excursion-item__text">Полный тур по заповедной зоне</p>
+                        </div>
+                    </div>
+                    
+                    <a href="booking.html" class="btn btn--primary">Записаться на экскурсию</a>
+                </div>
+                
+                <div class="service-section__images">
+                    <div class="service-section__image service-section__image--large">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Burabay_lakes.jpg" alt="Бурабай" loading="lazy">
+                    </div>
+                    <div class="service-section__image">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Landscape_in_Burabai.jpg" alt="Путешествие" loading="lazy">
+                    </div>
+                    <div class="service-section__image">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/View_of_Burabay_lake_and_Kokshe_mountains.jpg" alt="Озеро" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sport Section -->
+    <section class="service-section" id="sport">
+        <div class="container">
+            <div class="service-section__grid">
+                <div class="service-section__content">
+                    <span class="section-tag">Спорт и Активность</span>
+                    <h2 class="section-title">Движение — это жизнь</h2>
+                    <p class="service-section__text">
+                        Поддерживайте форму во время отдыха. Современные спортивные 
+                        объекты и профессиональные инструкторы помогут вам достичь 
+                        новых результатов или просто получить удовольствие от активности.
+                    </p>
+                    
+                    <div class="sport-options">
+                        <div class="sport-option">
+                            <div class="sport-option__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M6 5v14"/>
+                                    <path d="M18 5v14"/>
+                                    <path d="M3 9h18"/>
+                                    <path d="M3 15h18"/>
+                                </svg>
+                            </div>
+                            <h4 class="sport-option__title">Фитнес-зал</h4>
+                            <p class="sport-option__text">Современные тренажёры Technogym</p>
+                        </div>
+                        
+                        <div class="sport-option">
+                            <div class="sport-option__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 2a14.5 14.5 0 0 0 0 20"/>
+                                    <path d="M2 12h20"/>
+                                </svg>
+                            </div>
+                            <h4 class="sport-option__title">Йога-студия</h4>
+                            <p class="sport-option__text">Групповые и индивидуальные занятия</p>
+                        </div>
+                        
+                        <div class="sport-option">
+                            <div class="sport-option__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="3"/>
+                                    <path d="M12 1v6m0 6v6"/>
+                                    <path d="M21 12h-6m-6 0H1"/>
+                                </svg>
+                            </div>
+                            <h4 class="sport-option__title">Теннисные корты</h4>
+                            <p class="sport-option__text">2 корта с покрытием Har-Tru</p>
+                        </div>
+                        
+                        <div class="sport-option">
+                            <div class="sport-option__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="4"/>
+                                    <path d="M12 2v2"/>
+                                    <path d="M12 20v2"/>
+                                    <path d="M2 12h2"/>
+                                    <path d="M20 12h2"/>
+                                </svg>
+                            </div>
+                            <h4 class="sport-option__title">Велопрокат</h4>
+                            <p class="sport-option__text">Горные и городские велосипеды</p>
+                        </div>
+                        
+                        <div class="sport-option">
+                            <div class="sport-option__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 3v18"/>
+                                    <path d="M8 7l4-4 4 4"/>
+                                    <path d="M8 17l4 4 4-4"/>
+                                </svg>
+                            </div>
+                            <h4 class="sport-option__title">Скандинавская ходьба</h4>
+                            <p class="sport-option__text">Маршруты по лесным тропам</p>
+                        </div>
+                        
+                        <div class="sport-option">
+                            <div class="sport-option__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 21a9 9 0 0 0 9 -9a9 9 0 0 0 -9 -9a9 9 0 0 0 -9 9a9 9 0 0 0 9 9z"/>
+                                    <path d="M12 7v5l3 3"/>
+                                </svg>
+                            </div>
+                            <h4 class="sport-option__title">Аквааэробика</h4>
+                            <p class="sport-option__text">Занятия в бассейне с инструктором</p>
+                        </div>
+                    </div>
+                    
+                    <a href="booking.html" class="btn btn--primary">Записаться на занятие</a>
+                </div>
+                
+                <div class="service-section__images">
+                    <div class="service-section__image service-section__image--large">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Forest_of_the_Burabay.jpg" alt="Спортзал" loading="lazy">
+                    </div>
+                    <div class="service-section__image">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Burabay_mountains.jpg" alt="Фитнес" loading="lazy">
+                    </div>
+                    <div class="service-section__image">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Shchuchye.jpg" alt="Йога" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price List -->
+    <section class="price-section">
+        <div class="container">
+            <h2 class="section-title text-center">Прайс-лист на услуги</h2>
+            
+            <div class="price-list">
+                <div class="price-category">
+                    <h3 class="price-category__title">SPA & Массаж</h3>
+                    <div class="price-item">
+                        <span class="price-item__name">Классический массаж тела (60 мин)</span>
+                        <span class="price-item__price">18 000 ₸</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-item__name">Тайский массаж (90 мин)</span>
+                        <span class="price-item__price">28 000 ₸</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-item__name">Массаж горячими камнями (75 мин)</span>
+                        <span class="price-item__price">25 000 ₸</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-item__name">Антицеллюлитный массаж (60 мин)</span>
+                        <span class="price-item__price">22 000 ₸</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-item__name">Массаж лица (45 мин)</span>
+                        <span class="price-item__price">15 000 ₸</span>
+                    </div>
+                </div>
+                
+                <div class="price-category">
+                    <h3 class="price-category__title">Термальный комплекс</h3>
+                    <div class="price-item">
+                        <span class="price-item__name">Разовое посещение (3 часа)</span>
+                        <span class="price-item__price">8 000 ₸</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-item__name">Абонемент (10 посещений)</span>
+                        <span class="price-item__price">60 000 ₸</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-item__name">Индивидуальная сауна (60 мин)</span>
+                        <span class="price-item__price">12 000 ₸</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-item__name">VIP-комплекс (3 часа)</span>
+                        <span class="price-item__price">35 000 ₸</span>
+                    </div>
+                </div>
+                
+                <div class="price-category">
+                    <h3 class="price-category__title">Косметология</h3>
+                    <div class="price-item">
+                        <span class="price-item__name">Чистка лица комплексная</span>
+                        <span class="price-item__price">20 000 ₸</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-item__name">Пилинг лица (AHA-кислоты)</span>
+                        <span class="price-item__price">18 000 ₸</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-item__name">Обёртывание тела (60 мин)</span>
+                        <span class="price-item__price">16 000 ₸</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-item__name">Маска для лица (30 мин)</span>
+                        <span class="price-item__price">10 000 ₸</span>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="price-note">* Цены могут меняться в зависимости от сезона. Актуальный прайс уточняйте у администратора.</p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta__content">
+                <h2 class="cta__title">Готовы к оздоровлению?</h2>
+                <p class="cta__text">Забронируйте номер и выберите программы уже сегодня</p>
+                <a href="booking.html" class="cta__btn">Забронировать сейчас</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="index.html" class="nav__logo">
+                        <span class="nav__logo-icon">◆</span>
+                        <span class="nav__logo-text">Щучинск</span>
+                    </a>
+                    <p class="footer__desc">
+                        Премиальный санаторий в сердце Казахстана. 
+                        Ваш идеальный отдых начинается здесь.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                                <circle cx="12" cy="12" r="4"/>
+                                <circle cx="18" cy="6" r="1"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M18 2h-3a5 5 0 0 0 -5 5v3h-3v4h3v8h4v-8h3l1 -4h-4v-3a1 1 0 0 1 1 -1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"/>
+                                <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__title">Навигация</h4>
+                    <ul class="footer__list">
+                        <li><a href="about.html">О санатории</a></li>
+                        <li><a href="rooms.html">Номера</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="booking.html">Бронирование</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__title">Услуги</h4>
+                    <ul class="footer__list">
+                        <li><a href="#spa">SPA & Wellness</a></li>
+                        <li><a href="#treatment">Лечение</a></li>
+                        <li><a href="#food">Питание</a></li>
+                        <li><a href="#excursions">Экскурсии</a></li>
+                        <li><a href="#sport">Спорт</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__map">
+                    <h4 class="footer__title">Мы на карте</h4>
+                    <div class="footer__map-wrapper">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Borovoe_Classic.jpg" alt="Карта" class="footer__map-img" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2026 Щучинск Санаторий. Все права защищены.</p>
+                <div class="footer__legal">
+                    <a href="privacy.html">Политика конфиденциальности</a>
+                    <a href="terms.html">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="pages.js"></script>
+</body>
+</html>
+
+
+
+

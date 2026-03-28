@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Галерея санатория Щучинск — фотографии номеров, территории и услуг">
+    <title>Галерея | Щучинск Санаторий</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader__content">
+            <div class="preloader__logo">
+                <span class="preloader__letter preloader__letter--1">Щ</span>
+                <span class="preloader__letter preloader__letter--2">У</span>
+                <span class="preloader__letter preloader__letter--3">Ч</span>
+            </div>
+            <div class="preloader__line"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="container nav__container">
+            <a href="index.html" class="nav__logo">
+                <span class="nav__logo-icon">◆</span>
+                <span class="nav__logo-text">Щучинск</span>
+            </a>
+            <ul class="nav__menu" id="navMenu">
+                <li class="nav__item"><a href="about.html" class="nav__link">О санатории</a></li>
+                <li class="nav__item"><a href="rooms.html" class="nav__link">Номера</a></li>
+                <li class="nav__item"><a href="services.html" class="nav__link">Услуги</a></li>
+                <li class="nav__item"><a href="gallery.html" class="nav__link nav__link--active">Галерея</a></li>
+                <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+                <li class="nav__item"><a href="booking.html" class="nav__link nav__link--cta">Забронировать</a></li>
+            </ul>
+            <button class="nav__toggle" id="navToggle" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header page-header--small">
+        <div class="page-header__bg">
+            <div class="page-header__overlay"></div>
+        </div>
+        <div class="container page-header__content">
+            <h1 class="page-header__title">Галерея</h1>
+            <p class="page-header__subtitle">Моменты спокойствия и красоты</p>
+            <nav class="breadcrumb">
+                <a href="index.html">Главная</a>
+                <span class="breadcrumb__separator">/</span>
+                <span class="breadcrumb__current">Галерея</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="gallery-filter-section">
+        <div class="container">
+            <div class="gallery-filter">
+                <button class="gallery-filter__btn active" data-filter="all">Все</button>
+                <button class="gallery-filter__btn" data-filter="rooms">Номера</button>
+                <button class="gallery-filter__btn" data-filter="spa">SPA</button>
+                <button class="gallery-filter__btn" data-filter="nature">Природа</button>
+                <button class="gallery-filter__btn" data-filter="food">Питание</button>
+                <button class="gallery-filter__btn" data-filter="sport">Спорт</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-full">
+        <div class="gallery-full__grid">
+            <!-- Nature -->
+            <div class="gallery-full__item gallery-full__item--large" data-category="nature">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Forest_of_the_Burabay.jpg" alt="Природа Щучинска" loading="lazy">
+                <div class="gallery-full__overlay">
+                    <span>Природа</span>
+                </div>
+            </div>
+            
+            <!-- Rooms -->
+            <div class="gallery-full__item" data-category="rooms">
+                <img src="Trash/Screenshot_4.png" alt="Номер" loading="lazy">
+                <div class="gallery-full__overlay">
+                    <span>Номера</span>
+                </div>
+            </div>
+            
+            <!-- SPA -->
+            <div class="gallery-full__item" data-category="spa">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Burabay_mountains.jpg" alt="SPA" loading="lazy">
+                <div class="gallery-full__overlay">
+                    <span>SPA</span>
+                </div>
+            </div>
+            
+            <!-- Nature -->
+            <div class="gallery-full__item" data-category="nature">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Shchuchye.jpg" alt="Озеро" loading="lazy">
+                <div class="gallery-full__overlay">
+                    <span>Озеро</span>
+                </div>
+            </div>
+            
+            <!-- Food -->
+            <div class="gallery-full__item" data-category="food">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Borovoe_Classic.jpg" alt="Питание" loading="lazy">
+                <div class="gallery-full__overlay">
+                    <span>Питание</span>
+                </div>
+            </div>
+            
+            <!-- Sport -->
+            <div class="gallery-full__item" data-category="sport">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Burabay_lakes.jpg" alt="Спорт" loading="lazy">
+                <div class="gallery-full__overlay">
+                    <span>Спорт</span>
+                </div>
+            </div>
+            
+            <!-- Rooms -->
+            <div class="gallery-full__item" data-category="rooms">
+                <img src="Trash/Screenshot_3.png" alt="Номер Комфорт" loading="lazy">
+                <div class="gallery-full__overlay">
+                    <span>Номера</span>
+                </div>
+            </div>
+            
+            <!-- SPA -->
+            <div class="gallery-full__item" data-category="spa">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Landscape_in_Burabai.jpg" alt="Массаж" loading="lazy">
+                <div class="gallery-full__overlay">
+                    <span>Массаж</span>
+                </div>
+            </div>
+            
+            <!-- Nature -->
+            <div class="gallery-full__item gallery-full__item--tall" data-category="nature">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/View_of_Burabay_lake_and_Kokshe_mountains.jpg" alt="Лес" loading="lazy">
+                <div class="gallery-full__overlay">
+                    <span>Лес</span>
+                </div>
+            </div>
+            
+            <!-- Rooms -->
+            <div class="gallery-full__item" data-category="rooms">
+                <img src="Trash/Screenshot_3.png" alt="Люкс" loading="lazy">
+                <div class="gallery-full__overlay">
+                    <span>Люкс</span>
+                </div>
+            </div>
+            
+            <!-- Food -->
+            <div class="gallery-full__item" data-category="food">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Forest_of_the_Burabay.jpg" alt="Блюда" loading="lazy">
+                <div class="gallery-full__overlay">
+                    <span>Ресторан</span>
+                </div>
+            </div>
+            
+            <!-- Sport -->
+            <div class="gallery-full__item" data-category="sport">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Burabay_mountains.jpg" alt="Фитнес" loading="lazy">
+                <div class="gallery-full__overlay">
+                    <span>Фитнес</span>
+                </div>
+            </div>
+            
+            <!-- Nature -->
+            <div class="gallery-full__item" data-category="nature">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Shchuchye.jpg" alt="Горы" loading="lazy">
+                <div class="gallery-full__overlay">
+                    <span>Горы</span>
+                </div>
+            </div>
+            
+            <!-- SPA -->
+            <div class="gallery-full__item" data-category="spa">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Borovoe_Classic.jpg" alt="SPA салон" loading="lazy">
+                <div class="gallery-full__overlay">
+                    <span>SPA</span>
+                </div>
+            </div>
+            
+            <!-- Rooms -->
+            <div class="gallery-full__item" data-category="rooms">
+                <img src="Trash/Screenshot_3.png" alt="Президентский люкс" loading="lazy">
+                <div class="gallery-full__overlay">
+                    <span>Президентский</span>
+                </div>
+            </div>
+            
+            <!-- Nature -->
+            <div class="gallery-full__item" data-category="nature">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Burabay_lakes.jpg" alt="Пляж" loading="lazy">
+                <div class="gallery-full__overlay">
+                    <span>Пляж</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Load More -->
+        <div class="gallery-full__load-more">
+            <button class="btn btn--outline" id="loadMoreBtn">Загрузить ещё</button>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <div class="video-section__content">
+                <span class="section-tag text-center">Виртуальный тур</span>
+                <h2 class="section-title text-center">Посмотрите наш санаторий</h2>
+                
+                <div class="video-wrapper">
+                    <div class="video-placeholder">
+                        <button class="video-play-btn" id="videoPlayBtn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </button>
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Landscape_in_Burabai.jpg" alt="Видео превью" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section class="instagram-section">
+        <div class="container">
+            <span class="section-tag text-center">Instagram</span>
+            <h2 class="section-title text-center">@shchuchinsk_resort</h2>
+            <p class="instagram-section__text">Следите за нами в социальных сетях</p>
+            
+            <div class="instagram-grid">
+                <a href="#" class="instagram-item">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/View_of_Burabay_lake_and_Kokshe_mountains.jpg" alt="Instagram" loading="lazy">
+                    <div class="instagram-item__overlay">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5"/>
+                            <circle cx="12" cy="12" r="4"/>
+                            <circle cx="18" cy="6" r="1"/>
+                        </svg>
+                    </div>
+                </a>
+                <a href="#" class="instagram-item">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Forest_of_the_Burabay.jpg" alt="Instagram" loading="lazy">
+                    <div class="instagram-item__overlay">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5"/>
+                            <circle cx="12" cy="12" r="4"/>
+                            <circle cx="18" cy="6" r="1"/>
+                        </svg>
+                    </div>
+                </a>
+                <a href="#" class="instagram-item">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Burabay_mountains.jpg" alt="Instagram" loading="lazy">
+                    <div class="instagram-item__overlay">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5"/>
+                            <circle cx="12" cy="12" r="4"/>
+                            <circle cx="18" cy="6" r="1"/>
+                        </svg>
+                    </div>
+                </a>
+                <a href="#" class="instagram-item">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Shchuchye.jpg" alt="Instagram" loading="lazy">
+                    <div class="instagram-item__overlay">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5"/>
+                            <circle cx="12" cy="12" r="4"/>
+                            <circle cx="18" cy="6" r="1"/>
+                        </svg>
+                    </div>
+                </a>
+                <a href="#" class="instagram-item">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Borovoe_Classic.jpg" alt="Instagram" loading="lazy">
+                    <div class="instagram-item__overlay">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5"/>
+                            <circle cx="12" cy="12" r="4"/>
+                            <circle cx="18" cy="6" r="1"/>
+                        </svg>
+                    </div>
+                </a>
+                <a href="#" class="instagram-item">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Burabay_lakes.jpg" alt="Instagram" loading="lazy">
+                    <div class="instagram-item__overlay">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5"/>
+                            <circle cx="12" cy="12" r="4"/>
+                            <circle cx="18" cy="6" r="1"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            
+            <a href="#" class="btn btn--outline instagram-btn">Подписаться в Instagram</a>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta__content">
+                <h2 class="cta__title">Увидели что-то интересное?</h2>
+                <p class="cta__text">Забронируйте свой отдых и убедитесь во всём лично</p>
+                <a href="booking.html" class="cta__btn">Забронировать сейчас</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="index.html" class="nav__logo">
+                        <span class="nav__logo-icon">◆</span>
+                        <span class="nav__logo-text">Щучинск</span>
+                    </a>
+                    <p class="footer__desc">
+                        Премиальный санаторий в сердце Казахстана. 
+                        Ваш идеальный отдых начинается здесь.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                                <circle cx="12" cy="12" r="4"/>
+                                <circle cx="18" cy="6" r="1"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M18 2h-3a5 5 0 0 0 -5 5v3h-3v4h3v8h4v-8h3l1 -4h-4v-3a1 1 0 0 1 1 -1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"/>
+                                <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__title">Навигация</h4>
+                    <ul class="footer__list">
+                        <li><a href="about.html">О санатории</a></li>
+                        <li><a href="rooms.html">Номера</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="booking.html">Бронирование</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__title">Услуги</h4>
+                    <ul class="footer__list">
+                        <li><a href="services.html#spa">SPA & Wellness</a></li>
+                        <li><a href="services.html#treatment">Лечение</a></li>
+                        <li><a href="services.html#food">Питание</a></li>
+                        <li><a href="services.html#excursions">Экскурсии</a></li>
+                        <li><a href="services.html#sport">Спорт</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__map">
+                    <h4 class="footer__title">Мы на карте</h4>
+                    <div class="footer__map-wrapper">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Landscape_in_Burabai.jpg" alt="Карта" class="footer__map-img" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2026 Щучинск Санаторий. Все права защищены.</p>
+                <div class="footer__legal">
+                    <a href="privacy.html">Политика конфиденциальности</a>
+                    <a href="terms.html">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox__close" id="lightboxClose" aria-label="Закрыть">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6L6 18M6 6l12 12"/>
+            </svg>
+        </button>
+        <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Назад">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M15 18l-6-6 6-6"/>
+            </svg>
+        </button>
+        <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Вперёд">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 18l6-6-6-6"/>
+            </svg>
+        </button>
+        <div class="lightbox__content">
+            <img src="" alt="" id="lightboxImg">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="pages.js"></script>
+</body>
+</html>
+
+
+
+

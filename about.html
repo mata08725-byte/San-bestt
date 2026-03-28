@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="О санатории Щучинск — история, преимущества и команда профессионалов">
+    <title>О санатории | Щучинск</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader__content">
+            <div class="preloader__logo">
+                <span class="preloader__letter preloader__letter--1">Щ</span>
+                <span class="preloader__letter preloader__letter--2">У</span>
+                <span class="preloader__letter preloader__letter--3">Ч</span>
+            </div>
+            <div class="preloader__line"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="container nav__container">
+            <a href="index.html" class="nav__logo">
+                <span class="nav__logo-icon">◆</span>
+                <span class="nav__logo-text">Щучинск</span>
+            </a>
+            <ul class="nav__menu" id="navMenu">
+                <li class="nav__item"><a href="about.html" class="nav__link nav__link--active">О санатории</a></li>
+                <li class="nav__item"><a href="rooms.html" class="nav__link">Номера</a></li>
+                <li class="nav__item"><a href="services.html" class="nav__link">Услуги</a></li>
+                <li class="nav__item"><a href="gallery.html" class="nav__link">Галерея</a></li>
+                <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+                <li class="nav__item"><a href="booking.html" class="nav__link nav__link--cta">Забронировать</a></li>
+            </ul>
+            <button class="nav__toggle" id="navToggle" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header page-header--small">
+        <div class="page-header__bg">
+            <div class="page-header__overlay"></div>
+        </div>
+        <div class="container page-header__content">
+            <h1 class="page-header__title">О санатории</h1>
+            <p class="page-header__subtitle">Традиции здоровья и гостеприимства с 1998 года</p>
+            <nav class="breadcrumb">
+                <a href="index.html">Главная</a>
+                <span class="breadcrumb__separator">/</span>
+                <span class="breadcrumb__current">О нас</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story-section">
+        <div class="container">
+            <div class="story-section__grid">
+                <div class="story-section__content">
+                    <span class="section-tag">Наша история</span>
+                    <h2 class="section-title">Место, где природа лечит</h2>
+                    <div class="story-section__text">
+                        <p>
+                            Санаторий «Щучинск» был основан в 1998 году в самом сердце 
+                            живописного курортного региона Бурабай. Изначально задуманный 
+                            как небольшой оздоровительный комплекс, за 25 лет мы выросли 
+                            в один из ведущих санаториев Казахстана.
+                        </p>
+                        <p>
+                            Наше местоположение уникально: с одной стороны — кристально чистое 
+                            озеро Щучье, с другой — вековые сосновые леса, а вдали виднеются 
+                            очертания гор Кокшетау. Этот природный ансамбль создаёт идеальный 
+                            микроклимат для восстановления и оздоровления.
+                        </p>
+                        <p>
+                            Мы сочетаем традиционные методы лечения с современными технологиями, 
+                            сохраняя при этом атмосферу уюта и домашнего тепла. Наша миссия — 
+                            помочь каждому гостю обрести гармонию тела и духа.
+                        </p>
+                    </div>
+                    
+                    <div class="story-section__signature">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Shchuchye.jpg" alt="Директор санатория" class="story-section__avatar">
+                        <div class="story-section__author">
+                            <p class="story-section__quote">«Мы создали место, куда хочется возвращаться»</p>
+                            <p class="story-section__name">Асет Нурланов</p>
+                            <p class="story-section__position">Генеральный директор</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="story-section__images">
+                    <div class="story-section__image story-section__image--main">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Borovoe_Classic.jpg" alt="Санаторий" loading="lazy">
+                    </div>
+                    <div class="story-section__image story-section__image--secondary">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Burabay_lakes.jpg" alt="Территория" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <span class="section-tag text-center">Наши ценности</span>
+            <h2 class="section-title text-center">Что для нас важно</h2>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"/>
+                        </svg>
+                    </div>
+                    <h3 class="value-card__title">Экологичность</h3>
+                    <p class="value-card__text">
+                        Мы бережно относимся к окружающей природе и используем 
+                        экологически чистые материалы и технологии во всём.
+                    </p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 21a9 9 0 0 0 9 -9a9 9 0 0 0 -9 -9a9 9 0 0 0 -9 9a9 9 0 0 0 9 9z"/>
+                            <path d="M12 7v5l3 3"/>
+                        </svg>
+                    </div>
+                    <h3 class="value-card__title">Здоровье</h3>
+                    <p class="value-card__text">
+                        Благополучие гостей — наш главный приоритет. Все программы 
+                        разработаны врачами высшей категории.
+                    </p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"/>
+                            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/>
+                        </svg>
+                    </div>
+                    <h3 class="value-card__title">Комфорт</h3>
+                    <p class="value-card__text">
+                        Премиальный сервис и внимание к деталям создают атмосферу, 
+                        в которой хочется оставаться.
+                    </p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 8h1a4 4 0 1 1 0 8h-1"/>
+                            <path d="M3 8h14v9a4 4 0 0 1 -4 4h-6a4 4 0 0 1 -4 -4z"/>
+                            <path d="M6 1v3"/>
+                            <path d="M10 1v3"/>
+                            <path d="M14 1v3"/>
+                        </svg>
+                    </div>
+                    <h3 class="value-card__title">Профессионализм</h3>
+                    <p class="value-card__text">
+                        Наша команда — это специалисты с многолетним опытом 
+                        и искренней любовью к своему делу.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-card__value" data-count="25">0</span>
+                    <span class="stat-card__label">лет успешной работы</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-card__value" data-count="150">0</span>
+                    <span class="stat-card__label">номеров и люксов</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-card__value" data-count="50">0</span>
+                    <span class="stat-card__label">сотрудников в команде</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-card__value" data-count="98">0</span>
+                    <span class="stat-card__label">% гостей возвращаются</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-card__value" data-count="30">0</span>
+                    <span class="stat-card__label">программ оздоровления</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-card__value" data-count="100">0</span>
+                    <span class="stat-card__label">гектаров территории</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <span class="section-tag text-center">Наша команда</span>
+            <h2 class="section-title text-center">Специалисты, которым доверяют</h2>
+            
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-card__image">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Landscape_in_Burabai.jpg" alt="Врач" loading="lazy">
+                    </div>
+                    <div class="team-card__content">
+                        <h3 class="team-card__name">Д-р Айгуль Кенесова</h3>
+                        <p class="team-card__role">Главный врач</p>
+                        <p class="team-card__desc">Стаж 20 лет, специалист по курортологии и реабилитации</p>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-card__image">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/View_of_Burabay_lake_and_Kokshe_mountains.jpg" alt="Врач" loading="lazy">
+                    </div>
+                    <div class="team-card__content">
+                        <h3 class="team-card__name">Д-р Ержан Токтабаев</h3>
+                        <p class="team-card__role">Врач-физиотерапевт</p>
+                        <p class="team-card__desc">Стаж 15 лет, эксперт по лечебному массажу</p>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-card__image">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Forest_of_the_Burabay.jpg" alt="Специалист" loading="lazy">
+                    </div>
+                    <div class="team-card__content">
+                        <h3 class="team-card__name">Мария Володина</h3>
+                        <p class="team-card__role">SPA-директор</p>
+                        <p class="team-card__desc">Стаж 12 лет, сертифицированный косметолог</p>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-card__image">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Burabay_mountains.jpg" alt="Шеф-повар" loading="lazy">
+                    </div>
+                    <div class="team-card__content">
+                        <h3 class="team-card__name">Азамат Сериков</h3>
+                        <p class="team-card__role">Шеф-повар</p>
+                        <p class="team-card__desc">Стаж 18 лет, специалист по здоровому питанию</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section class="awards-section">
+        <div class="container">
+            <span class="section-tag text-center">Признание</span>
+            <h2 class="section-title text-center">Наши награды и сертификаты</h2>
+            
+            <div class="awards-grid">
+                <div class="award-card">
+                    <div class="award-card__icon">🏆</div>
+                    <h3 class="award-card__title">Лучший санаторий Казахстана</h3>
+                    <p class="award-card__year">2024</p>
+                    <p class="award-card__org">National Travel Awards</p>
+                </div>
+                
+                <div class="award-card">
+                    <div class="award-card__icon">🌿</div>
+                    <h3 class="award-card__title">Эко-сертификат</h3>
+                    <p class="award-card__year">2023</p>
+                    <p class="award-card__org">Green Key International</p>
+                </div>
+                
+                <div class="award-card">
+                    <div class="award-card__icon">⭐</div>
+                    <h3 class="award-card__title">4 звезды Superior</h3>
+                    <p class="award-card__year">2023</p>
+                    <p class="award-card__org">Министерство туризма РК</p>
+                </div>
+                
+                <div class="award-card">
+                    <div class="award-card__icon">🏅</div>
+                    <h3 class="award-card__title">Знак качества</h3>
+                    <p class="award-card__year">2022</p>
+                    <p class="award-card__org">QazMed Standard</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners-section">
+        <div class="container">
+            <h2 class="section-title text-center">Нам доверяют</h2>
+            
+            <div class="partners-logos">
+                <div class="partners-logo">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Shchuchye.jpg" alt="Партнёр" loading="lazy">
+                </div>
+                <div class="partners-logo">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Borovoe_Classic.jpg" alt="Партнёр" loading="lazy">
+                </div>
+                <div class="partners-logo">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Burabay_lakes.jpg" alt="Партнёр" loading="lazy">
+                </div>
+                <div class="partners-logo">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Landscape_in_Burabai.jpg" alt="Партнёр" loading="lazy">
+                </div>
+                <div class="partners-logo">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/View_of_Burabay_lake_and_Kokshe_mountains.jpg" alt="Партнёр" loading="lazy">
+                </div>
+                <div class="partners-logo">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Forest_of_the_Burabay.jpg" alt="Партнёр" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta__content">
+                <h2 class="cta__title">Станьте частью нашей семьи</h2>
+                <p class="cta__text">Забронируйте отдых в санатории «Щучинск» уже сегодня</p>
+                <a href="booking.html" class="cta__btn">Забронировать сейчас</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="index.html" class="nav__logo">
+                        <span class="nav__logo-icon">◆</span>
+                        <span class="nav__logo-text">Щучинск</span>
+                    </a>
+                    <p class="footer__desc">
+                        Премиальный санаторий в сердце Казахстана. 
+                        Ваш идеальный отдых начинается здесь.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                                <circle cx="12" cy="12" r="4"/>
+                                <circle cx="18" cy="6" r="1"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M18 2h-3a5 5 0 0 0 -5 5v3h-3v4h3v8h4v-8h3l1 -4h-4v-3a1 1 0 0 1 1 -1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"/>
+                                <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__title">Навигация</h4>
+                    <ul class="footer__list">
+                        <li><a href="about.html">О санатории</a></li>
+                        <li><a href="rooms.html">Номера</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="booking.html">Бронирование</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__title">Услуги</h4>
+                    <ul class="footer__list">
+                        <li><a href="services.html#spa">SPA & Wellness</a></li>
+                        <li><a href="services.html#treatment">Лечение</a></li>
+                        <li><a href="services.html#food">Питание</a></li>
+                        <li><a href="services.html#excursions">Экскурсии</a></li>
+                        <li><a href="services.html#sport">Спорт</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__map">
+                    <h4 class="footer__title">Мы на карте</h4>
+                    <div class="footer__map-wrapper">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Burabay_mountains.jpg" alt="Карта" class="footer__map-img" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2026 Щучинск Санаторий. Все права защищены.</p>
+                <div class="footer__legal">
+                    <a href="privacy.html">Политика конфиденциальности</a>
+                    <a href="terms.html">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="pages.js"></script>
+</body>
+</html>
+
+
+
+
